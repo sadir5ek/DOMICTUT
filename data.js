@@ -93,8 +93,6 @@
    },
    ];
 
-
-
    export const prof = [
     {
         imgg:'./img/buffet 1.svg',
@@ -122,7 +120,6 @@
     },
 
    ];
-
 
    export const krov = [
     {

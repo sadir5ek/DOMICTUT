@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header class="shadow-xl ">
+
+        <div class="w-[700px] h-[50px] m-auto flex items-center justify-between">
+
+            <div>
+             <a href="../../index.html"><h1 class="text-3xl font-bold italic text-green-800">DOMICTUT</h1></a>   
+            </div>
+           <a href="#"> <h1 class="text-xl font-bold italic text-blue-500">SADIRBEK</h1></a> 
+            <a href="#"> <H1 class="text-xl font-bold italic text-blue-500">AKJIGIT</H1></a>   
+             <nav class="text-xl font-semibold">
+               
+                <button id="logout" class="border p-2 bg-red-500 rounded-[5PX] text-white">X</button>
+            </nav> 
+        
+      <img src="../../img/awa.png" alt="" class="w-[40px] h-[40px] cursor-pointer" id="openModal" >
+        <div id="overlay"></div>
+        <div id="modal">
+            <img src="../../img/awwa.jpg" alt="" class="w-[100px]">
+            <p>SADIRBEK</p>
+            <button id="closeModal">X</button>
+        </div>
+        </div>
+    </header> 
+    <div class="text-center">
+        <h1 class="text-3xl font-bold my-4">Добро пожаловать , <span id="userName" class="text-green-500"></span>!</h1>
+    </div>
+    <script src="./home.js"></script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="shadow-lg bg-white">
+        <div class="w-[700px] h-[60px] m-auto flex items-center justify-between">
+            <div>
+                <a href="../../index.html">
+                    <h1 class="text-3xl font-bold italic text-green-800">DOMICTUT</h1>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#"><h1 class="text-xl font-bold italic text-blue-500">SADIRBEK</h1></a>
+                <a href="#"><h1 class="text-xl font-bold italic text-blue-500">AKJIGIT</h1></a>
+                <img src="../../img/awa.png" alt="Profile" class="w-[40px] h-[40px] rounded-full cursor-pointer" id="openModal">
+            </div>
+        </div>
+    </header>
+    
+    <div class="text-center mt-10">
+        <h1 class="text-3xl font-bold my-4">Добро пожаловать, <span id="userName" class="text-green-500"></span>!</h1>
+    </div>
+
+
+    <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div id="modal" class="bg-white p-8 rounded-lg shadow-2xl w-[400px] relative">
+            <button id="closeModal" class="absolute top-3 right-3 text-2xl font-bold text-gray-600 hover:text-red-500">&times;</button>
+            <div class="text-center">
+                <label for="profileImage" class="cursor-pointer">
+                    <img src="../../img/awwa.jpg" alt="User Avatar" class="w-[120px] h-[120px] rounded-full mx-auto mb-4 hover:opacity-80">
+                </label>
+                <input type="file" id="profileImage" class="hidden" accept="image/*">
+                <h2 class="text-xl font-bold">Sadirbek</h2>
+                <p>Email: sadirbek@example.com</p>
+                <p>Туулган күнү: 15.14.2015</p>
+                <p>Кызыгуулары: Программалоо, Фудбол, Архитектура</p>
+            </div>
+            <button id="createAccountBtn" class="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+                Жаңы аккаунт ачуу
+            </button>
+        </div>
+    </div>
+
+    <script src="./home.js"></script>
+</body>
+
+</html>
