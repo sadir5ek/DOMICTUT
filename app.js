@@ -60,7 +60,7 @@ metal.forEach((metal) => {
               </div>
               <div class="flex mt-[15px] ml-[35px] items-center">
                 <p class="font-bold text-[22px] text-[#333333]  ">${metal.color}</p>
-                <a href="" class="text-[#F4683F] text-[16px] ml-[80px]">${metal.valie}</a>
+                <a href="./pages/cards/card1.html" class="text-[#F4683F] text-[16px] ml-[80px]">${metal.valie}</a>
               </div>
 
             </div> 
